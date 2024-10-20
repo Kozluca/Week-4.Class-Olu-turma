@@ -6,55 +6,63 @@ using System.Threading.Tasks;
 
 namespace Polymorphism
 {
-    public class BaseGeometrikSekil
+    public class BaseGeometrikSekil  // BaseGeometrikSekil adında bir class açtık
     {
-        double Yükseklik;
-        double Genişlik;
-        double Sonuç;
-        public virtual void AlanHesapla()
+        public double Yükseklik;              // propertyleri tanımladık
+        public double Genişlik;
+        public double Sonuç;
+        public double Sonuç1;
+
+        public virtual void AlanHesapla()   // daha sonra değiştirmek için virtual metodu kullandık
         {
-            double Sonuç = Yükseklik * Genişlik;
-            Console.WriteLine("Karenin Alanı: " + Sonuç);
+            Sonuç = Yükseklik * Genişlik;                  // Alan Hesabını tanımladık
+            Sonuç1 = (Yükseklik * Genişlik) / 2;
         }
     }
     public class Kare : BaseGeometrikSekil
     {
-
-        public override void AlanHesapla()
+        public Kare(double yükseklik, double genişlik)
         {
-            double Yükseklik = 16;
-            double Genişlik = 16;
-            double Sonuç = Yükseklik * Genişlik;
-
-            Console.WriteLine("Karenin Alanı: " + Sonuç);
-
+            Yükseklik = yükseklik;
+            Genişlik = genişlik;
+        }
+        public override void AlanHesapla()   // override ile değişiklik yapabiliyoruz.
+        {
+            base.AlanHesapla();
+            Console.WriteLine("Karenin Alanı: " +Sonuç);
         }
     }
     public class Dikdörtgen : BaseGeometrikSekil
     {
-
+        public Dikdörtgen(double yükseklik, double genişlik)
+        {
+            Yükseklik = yükseklik;
+            Genişlik = genişlik;
+        }
         public override void AlanHesapla()
         {
-            double Yükseklik = 12;
-            double Genişlik = 21;
-            double Sonuç = Yükseklik * Genişlik;
-
-            Console.WriteLine("Dikdörtgenin Alanı : " + Sonuç);
+            base.AlanHesapla();
+            Console.WriteLine("Dikdörtgenin Alanı: " + Sonuç);
         }
     }
-    public class Uçgen : BaseGeometrikSekil
+    public class Ucgen : BaseGeometrikSekil
     {
+        public Ucgen(double yükseklik, double genişlik)
+        {
+            Yükseklik = yükseklik;
+            Genişlik = genişlik;
+        }
         public override void AlanHesapla()
         {
-            double Yükseklik = 32;
-            double Genişlik = 21;
-            double Sonuç = (Yükseklik * Genişlik) / 2;
-
-            Console.WriteLine("Üçgenin Alanı : " + Sonuç);
-
+            base.AlanHesapla();
+            Console.WriteLine("Ücgenin Alanı: " + Sonuç1);
         }
     }
 }
+
+
+
+
 
 
 

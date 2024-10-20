@@ -8,12 +8,12 @@ namespace Encapsulation
 {
     public class Car      // car sınıfı tanımladık ve propertylerini yazdık
     {
-        string _Renk;
-        string _Model;
-        string _Marka;
-        int _KapıSayısı;
+        public string _Renk;
+        public string _Model;
+        public string _Marka;
+        public int _KapıSayısı;
 
-        public Car(string renk, string model, string marka, int kapısayısı)  
+        public Car(string renk, string model, string marka, int kapısayısı)
         {
             _Renk = renk;
             _Model = model;
@@ -40,6 +40,7 @@ namespace Encapsulation
             get { return _KapıSayısı; }
             set { _KapıSayısı = value; }
         }
+
         public void Information()
         {
             Console.WriteLine("Arabanın Markası: " + _Marka);
@@ -47,14 +48,16 @@ namespace Encapsulation
             Console.WriteLine("Arabanın Rengi: " + _Renk);
             if (_KapıSayısı != 2 && _KapıSayısı != 4)
             {
+                _KapıSayısı = -1;
                 Console.WriteLine(_KapıSayısı + " Hatalı kapı sayısı");
-                _KapıSayısı=-1;
 
                 Console.WriteLine("Yeni kapı sayısı: " + _KapıSayısı);
             }
             else
-                Console.WriteLine("Arabanın Kapı Sayısı: " + _KapıSayısı);
-        }
 
+                Console.WriteLine("Arabanın Kapı Sayısı: " + _KapıSayısı);
+            Console.WriteLine("----------------------");
+
+        }
     }
 }

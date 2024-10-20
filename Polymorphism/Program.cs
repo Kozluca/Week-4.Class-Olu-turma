@@ -10,15 +10,14 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
-          
-            BaseGeometrikSekil baseGeometrikSekil = new Uçgen();
-            baseGeometrikSekil.AlanHesapla();
-            BaseGeometrikSekil baseGeometrik = new Kare();
-            baseGeometrik.AlanHesapla();
-            BaseGeometrikSekil baseGeometrikSekil1=new Dikdörtgen();
-            baseGeometrikSekil1 .AlanHesapla();
-           
-             Console.ReadKey();
+
+            BaseGeometrikSekil Kare = new Kare(15, 15);
+            Kare.AlanHesapla();
+            BaseGeometrikSekil Dikdörtgen = new Dikdörtgen(21, 18);
+            Dikdörtgen.AlanHesapla();
+            BaseGeometrikSekil Ucgen = new Ucgen(24, 12);
+            Ucgen.AlanHesapla();
+            Console.ReadKey();
 
         }
     }
