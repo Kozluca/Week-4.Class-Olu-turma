@@ -14,7 +14,7 @@ namespace Encapsulation
 
         static void Main(string[] args)
         {
-            Car car =new Car("Kırmızı","Mustang","Ford",5);
+            Car car =new Car("Kırmızı","Mustang","Ford",9);
             car.Information();
             Console.ReadKey();
         }

@@ -48,7 +48,7 @@ namespace Encapsulation
             if (_KapıSayısı != 2 && _KapıSayısı != 4)
             {
                 Console.WriteLine(_KapıSayısı + " Hatalı kapı sayısı");
-                _KapıSayısı--;
+                _KapıSayısı=-1;
 
                 Console.WriteLine("Yeni kapı sayısı: " + _KapıSayısı);
             }

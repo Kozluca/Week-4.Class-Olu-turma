@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patika.Kütüphane", "Patik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{E8A73280-EFDB-40D0-A468-9B22F66755A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{AD91DDD0-A9F5-4F24-981A-DA9793D771B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E8A73280-EFDB-40D0-A468-9B22F66755A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A73280-EFDB-40D0-A468-9B22F66755A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A73280-EFDB-40D0-A468-9B22F66755A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD91DDD0-A9F5-4F24-981A-DA9793D771B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD91DDD0-A9F5-4F24-981A-DA9793D771B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD91DDD0-A9F5-4F24-981A-DA9793D771B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD91DDD0-A9F5-4F24-981A-DA9793D771B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
