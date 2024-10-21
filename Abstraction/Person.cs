@@ -29,7 +29,7 @@ namespace Abstraction
             Console.WriteLine(Name + " " + Surname + " " + Poisition + " Olarak çalışıyor.");
         }
     }
-
+    //                               İkinci Yöntem
 
     public abstract class Duty        // abstract sınıf tanımladık 
     {

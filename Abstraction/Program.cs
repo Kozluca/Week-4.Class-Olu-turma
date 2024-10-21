@@ -11,24 +11,24 @@ namespace Abstraction
         static void Main(string[] args)
         {
             Person Hakan = new Person("Hakan", "Yıldız", "Üretim Mühendisi");   // person sınıfından Hakan adında nesne ürettik
-            Hakan.Gorev();
+            Hakan.Gorev();                    // abstract Duty sıfıdındaki metodu çalğırdık
             Console.WriteLine("-----------------------------");
-
+             
             Person Ayşe = new Person("Ayşe ", "Kaplan", "İnsan Kaynakları Müdürü");      // person sınıfından Ayşe adında nesne ürettik
-            Ayşe.Gorev();
+            Ayşe.Gorev();                       // abstract Duty sıfıdındaki metodu çalğırdık
             Console.WriteLine("-----------------------------");
 
             Person Veli = new Person("Veli", "Yeşil", "Aşçı");       // person sınıfından Ali adında nesne ürettik
-            Veli.Gorev();
+            Veli.Gorev();                        // abstract Duty sıfıdındaki metodu çalğırdık
 
             Console.WriteLine("--------------2.Yöntem---------------");
 
             Hasan Hasan = new Hasan("Hasan", "Yıldız", "İnsan kaynakları"); //Hasan sınıfından nesne oluştruduk
-            Hasan.Gorev();     // abstract Duty sıfıdındaki metodu çalğırdık
+            Hasan.Gorev();                    // abstract Duty sıfıdındaki metodu çalğırdık
             Console.WriteLine("-----------------------------");
 
             Fatma Fatma = new Fatma("Fatma", "Kaplan", "Üretim");
-            Fatma.Gorev();
+            Fatma.Gorev();                        // abstract Duty sıfıdındaki metodu çalğırdık
             Console.WriteLine("-----------------------------");
 
             Ali Ali = new Ali("Ali", "Yeşil", "Bakım");
