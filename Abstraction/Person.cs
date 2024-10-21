@@ -7,6 +7,29 @@ using System.Threading.Tasks;
 
 namespace Abstraction
 {
+    public abstract class Dutyy    // abstract sınıf Tanımladık.
+    {
+        public abstract void Gorev();  // override yapmak için meetot tanımladık
+    }
+
+    public class Person : Dutyy // Person adında sınıf tanımladık Duty sınıfından miras aldık
+    {
+        string Name;          // propertyleri tanımladık.
+        string Surname;
+        string Poisition;
+        public Person(string name, string surname, string position)     //constactor yapısını kullandık
+        {
+            Name = name;
+            Surname = surname;
+            Poisition = position;
+
+        }
+        public override void Gorev()         // override ile istediğimiz değişikliği yaptık
+        {
+            Console.WriteLine(Name + " " + Surname + " " + Poisition + " Olarak çalışıyor.");
+        }
+    }
+
 
     public abstract class Duty        // abstract sınıf tanımladık 
     {
@@ -63,19 +86,12 @@ namespace Abstraction
             SurName = surName;
             Departman = departman;
         }
-
         public override void Gorev()            // override yaparak istediğimiz değişikliği yaptık
 
         {
-            Console.WriteLine("Üretim Mügendisi olarak çalısıyorum.");
+            Console.WriteLine("Üretim Mühendisi olarak çalısıyorum.");
         }
     }
-
-
-
-
-
-
 }
 
 
